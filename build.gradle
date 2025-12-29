@@ -42,11 +42,11 @@ dependencies {
     testImplementation 'org.wiremock:wiremock:3.13.2'
 }
 
-String pluginId = 'name.remal.content-loader'
+String pluginId = 'name.remal.load-content'
 
 gradlePlugin {
     plugins {
-        'name.remal.content-loader' {
+        'name.remal.load-content' {
             id = pluginId
             implementationClass = 'name.remal.gradle_plugins.content_loader.ContentLoaderPlugin'
             displayName = 'Plugin'
